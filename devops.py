@@ -185,7 +185,7 @@ def _build_and_push_distribution():
     Builds and pushes distribution to PyPI, along with pushing the
     tags back to the repo
     """
-    _publish_to_pypi()
+    # _publish_to_pypi()
 
     # Push the code changes after succcessful pypi deploy
     _shell('git push --follow-tags')
