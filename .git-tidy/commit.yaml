@@ -13,6 +13,11 @@
   help: A high-level summary of the changes.
   type: string
 
+- label: Jira
+  name: Jira
+  help: Jira ticker number
+  type: number
+
 - label: description
   name: Description
   help: An in-depth description of the changes.
