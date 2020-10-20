@@ -57,7 +57,7 @@ def _shell_stdout(cmd, check=True):
 
 def _configure_git():
     """Configure git name/email and verify git version"""
-    _check_git_version()
+    # _check_git_version()
 
     _shell('git config --local user.email "eng@funimation.com"')
     _shell('git config --local user.name "Funimation Devops"')
