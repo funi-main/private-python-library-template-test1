@@ -19,6 +19,10 @@
 
     {{ commit.description|indent(4) }}
 {% endif %}
+{% if commit.jira %}
+
+    Jira: TS-{{ commit.jira }}
+{% endif %}
 {% endif %}
 {% endfor %}
 {% endfor %}
