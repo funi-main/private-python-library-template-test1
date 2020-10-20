@@ -16,7 +16,9 @@
 - label: Jira
   name: Jira
   help: Jira ticker number
-  type: number
+  type: string
+  condition: ['!=', 'type', 'trivial']
+  multiline: False
 
 - label: description
   name: Description
