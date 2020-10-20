@@ -4,7 +4,7 @@ executors:
   python:
     working_directory: ~/private-python-library-template-test1
     docker:
-      - image: funimation/circleci-private-python-library
+      - image: circleci/python:3.8
 
 jobs:
   test:
@@ -51,11 +51,3 @@ workflows:
           filters:
             branches:
               ignore: master
-      - deploy:
-          context: private-python-library
-          requires:
-            - test
-            - lint
-          filters:
-            branches:
-              only: master

@@ -13,6 +13,13 @@
   help: A high-level summary of the changes.
   type: string
 
+- label: jira
+  name: Jira
+  help: Jira ticker number
+  type: string
+  condition: ['!=', 'type', 'trivial']
+  multiline: False
+
 - label: description
   name: Description
   help: An in-depth description of the changes.
