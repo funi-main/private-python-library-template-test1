@@ -55,10 +55,10 @@ ifeq (${OS}, Darwin)
 	-brew upgrade pyenv 2> /dev/null
 	-pyenv rehash
 	# pyenv install -s ${PY36_VERSION}
-	pyenv install -s ${PY37_VERSION}
-	# pyenv install -s ${PY38_VERSION}
+	# pyenv install -s ${PY37_VERSION}
+	pyenv install -s ${PY38_VERSION}
 	# pyenv local ${PY36_VERSION} ${PY37_VERSION} ${PY38_VERSION}
-	pyenv local ${PY37_VERSION}
+	pyenv local ${PY38_VERSION}
 endif
 # Conditionally install pipx so that we can globally install poetry
 	pip install --user --upgrade --force-reinstall pipx
