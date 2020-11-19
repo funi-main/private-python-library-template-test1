@@ -19,9 +19,7 @@ OS = $(shell uname -s)
 PACKAGE_NAME=private-python-library-template-test1
 MODULE_NAME=private_python_library_template_test1
 
-PY36_VERSION=3.6.5
-PY37_VERSION=3.7.6
-PY38_VERSION=3.8.2
+PY38_VERSION=3.8.0
 
 
 # Print usage of main targets when user types "make" or "make help"
@@ -54,10 +52,7 @@ ifeq (${OS}, Darwin)
 	-brew install pyenv 2> /dev/null
 	-brew upgrade pyenv 2> /dev/null
 	-pyenv rehash
-	# pyenv install -s ${PY36_VERSION}
-	# pyenv install -s ${PY37_VERSION}
 	pyenv install -s ${PY38_VERSION}
-	# pyenv local ${PY36_VERSION} ${PY37_VERSION} ${PY38_VERSION}
 	pyenv local ${PY38_VERSION}
 endif
 # Conditionally install pipx so that we can globally install poetry
