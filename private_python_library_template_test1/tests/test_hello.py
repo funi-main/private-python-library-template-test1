@@ -2,4 +2,4 @@ import hello
 
 
 def test_hello():
-    assert hello.say_hello() == "Hello"
+    assert hello.say_hello() == "Hello Funimation"
