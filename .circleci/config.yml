@@ -4,7 +4,7 @@ executors:
   python:
     working_directory: ~/private-python-library-template-test1
     docker:
-      - image: circleci/python:3.8
+      - image: circleci/python:3.8.0b1-stretch
 
 jobs:
   test:
